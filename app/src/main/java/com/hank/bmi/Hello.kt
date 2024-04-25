@@ -20,7 +20,11 @@ fun main() {
     println("\nname2改變後為: $name2")
 
     //Float(32), Double(64)
+    val weight:Float = 65.5f
     //true,false
+    val isAdult = false
     //Char
+    val c = 'A'
+    println(c)
 
 }
