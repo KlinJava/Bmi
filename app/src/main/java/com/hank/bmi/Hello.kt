@@ -5,14 +5,31 @@ class Hello {
 }
 
 fun main() {
-    val p = Person()
+    val p = Person("Jack",65.5f,1.7f)
+    println("Bmi: ${p.bmi()}") // 如同 println("Bmi: " + p.bmi())
+    val hank = Person("Hank",70f,1.75f)
+    println(p.name + " " + p.bmi())
+    println(hank.name + " " + hank.bmi())
+    val idTest = Person("JIM",50f,1.77f,"33")
+    idTest.idPrint()
     p.Hello()
 
-
+//    BmiTest1()
 //    primitiveTest()
 
 }
 
+//Bmi：寫在 Main方法裡面
+private fun BmiTest1() {
+    val p = Person("Tom",65.5f,1.7f)
+    p.Hello()
+    val w = 65.5f
+    val h = 1.7f
+    val bmi = w / (h * h)
+    println("BMI: " + bmi)
+}
+
+//基本資料型態練習
 private fun primitiveTest() {
     println("Hello kotlin!")
     //Byte(8), Short(16), Int(32), Long(64)
