@@ -1,12 +1,24 @@
 package com.hank.bmi
 
 class Hello {
+
 }
 
 fun main() {
+    val p = Person()
+    p.Hello()
+
+
+//    primitiveTest()
+
+}
+
+private fun primitiveTest() {
     println("Hello kotlin!")
     //Byte(8), Short(16), Int(32), Long(64)
     val age = 20 // val 為「不可變」變數，資料給定後就不可改變
+//    val age:Int = 20
+    val population: Long = 9999 //未來人口數會破億，故用 Long 64bit較大，也可寫成 val population = 9999L
     println("age+1: ${age.inc()}") //數值+1，但「age原始值」不會改變
     println("age: $age") //age原始值
 
@@ -20,11 +32,10 @@ fun main() {
     println("\nname2改變後為: $name2")
 
     //Float(32), Double(64)
-    val weight:Float = 65.5f
+    val weight: Float = 65.5f
     //true,false
     val isAdult = false
     //Char
     val c = 'A'
     println(c)
-
 }
