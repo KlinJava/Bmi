@@ -31,7 +31,20 @@ private fun guessForLoop(num: Int, secret: Int) {
         num1 = input?.toIntOrNull() ?: 0 // ?:貓王符號
         println("The number you entered: $num1")
 //    println("The number length: ${input?.length}")
-        if (num1 < secret) {
+        //方法2，when語法
+        val message = when {
+            num1 < secret -> "Bigger"
+            num1 > secret -> "Smaller"
+            else -> {
+                bingo = true
+                "You got it!"
+            }
+        }
+        println(message)
+        if (bingo) break
+
+        //方法1，if..else
+        /*if (num1 < secret) {
             println("Bigger")
         } else if (num1 > secret) {
             println("Samller")
@@ -39,7 +52,7 @@ private fun guessForLoop(num: Int, secret: Int) {
             println("You got it!")
             bingo = true
             break
-        }
+        }*/
     }
     if (!bingo) println("Failed, the secret number is $secret")
 }
