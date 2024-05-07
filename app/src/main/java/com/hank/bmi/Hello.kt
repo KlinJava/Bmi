@@ -1,5 +1,7 @@
 package com.hank.bmi
 
+import com.hank.bmi.student.Student
+
 class Hello {
 
 }
@@ -55,4 +57,5 @@ private fun primitiveTest() {
     //Char
     val c = 'A'
     println(c)
+
 }

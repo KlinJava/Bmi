@@ -7,7 +7,7 @@ package com.hank.bmi.student
 印出學生等級(A,B,C,D,F)
 */
 
-class Student(val id:String, val name:String, var english:Int, var math:Int) {  //Student 後面省略的 Constructor
+open class Student(val id:String, val name:String, var english:Int, var math:Int) {  //Student 後面省略的 Constructor，加 open是為了繼承
 //class Student Constructor(val id:String, val name:String, var english:Int, var math:Int)
 
     //類似 java 的  static功能
@@ -20,7 +20,7 @@ class Student(val id:String, val name:String, var english:Int, var math:Int) {  
     //第2個建構子，它可以使用「主建構子」的方式，將變數授與「初始值」，即可達到相同效果
     // 如 class Student(val id:String, val name:String, var english:Int = 0, var math:Int = 0)
     constructor(id:String, name:String):this(id,name,0,0)
-    fun print(){
+    open fun print(){
         val mark = if (average() < pass) "*" else ""
         println("$id\t$name\t$english\t$math\t${average()}$mark\t${grading()}")
     }

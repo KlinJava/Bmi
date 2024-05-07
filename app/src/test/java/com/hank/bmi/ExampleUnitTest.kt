@@ -1,5 +1,6 @@
 package com.hank.bmi
 
+import com.hank.bmi.student.Student
 import org.junit.Test
 
 import org.junit.Assert.*
