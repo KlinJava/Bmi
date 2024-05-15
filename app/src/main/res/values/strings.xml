@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">Bmi</string>
+    <string name="app_name">Guess</string>
+    <string name="ok">OK</string>
+    <string name="enter_number">Enter a number</string>
+    <string name="please_enter_a_number_1_10">Please enter a number(1-10)</string>
+    <string name="guess">Guess</string>
+    <string name="smaller">Smaller</string>
+    <string name="bigger">Bigger</string>
+    <string name="you_got_it">You got it!</string>
+    <string name="info">Info</string>
 </resources>
