@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bmi</string>
+    <string name="bmi_calculator">BMI身體質量指數計算機</string>
+    <string name="weight_title">體重：</string>
+    <string name="height_title">身高：</string>
+    <string name="calculate">計算</string>
+    <string name="reset">重置</string>
+    <string name="weight_height_value_arent_empty">體重和身高值不可為零</string>
+    <string name="your_bmi_is">您的 BMI 是</string>
+    <string name="bmi_result">BMI 結果</string>
+    <string name="bmi_error">BMI 錯誤</string>
+</resources>
